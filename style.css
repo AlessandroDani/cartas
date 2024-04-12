@@ -200,14 +200,19 @@ table {
         width: 100%;
     }
 
+    table{
+        width: 100%;
+        margin: 0;
+    }
+
     .container__table{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: auto 0;
-        width: 100%;
-        padding: 20px;
+        width: 90%;
+        padding-top: 20px;
     }
     .form{
         display: flex;
@@ -216,8 +221,13 @@ table {
         align-items: center;
         width: 100%;
     }
-    
-    table{
+
+    #number_input{
         width: 100%;
     }
+
+    #card_input{
+        width: 100%;
+    }
+
 }
