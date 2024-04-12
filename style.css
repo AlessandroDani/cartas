@@ -216,4 +216,8 @@ table {
         align-items: center;
         width: 100%;
     }
+    
+    table{
+        width: 100%;
+    }
 }
