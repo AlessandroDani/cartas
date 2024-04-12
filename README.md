@@ -1,3 +1,3 @@
-###CARDS
+# CARDS
 
-##This is a basic practice with html, css and javascript
+### This is a basic practice with html, css and javascript
