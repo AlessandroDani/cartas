@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Home - Cartas</title>
+</head>
+<body>
+    <img id="logo" src="img/logo.png">
+
+    <div class="cards">
+        <img src="img/cards/1.png" alt="card1" onclick="sumCard(1)">
+        <img src="img/cards/2.png" alt="card2" onclick="sumCard(2)">
+        <img src="img/cards/3.png" alt="card3" onclick="sumCard(3)">
+        <img src="img/cards/4.png" alt="card4" onclick="sumCard(4)">
+        <img src="img/cards/5.png" alt="card5" onclick="sumCard(5)">
+        <img src="img/cards/6.png" alt="card6" onclick="sumCard(6)">
+        <img src="img/cards/7.png" alt="card7" onclick="sumCard(7)">
+        <img src="img/cards/8.png" alt="card8" onclick="sumCard(8)">
+        <img src="img/cards/9.png" alt="card9" onclick="sumCard(9)">
+        <img src="img/cards/10.png" alt="card10" onclick="sumCard(10)">
+        <img src="img/cards/11.png" alt="card11" onclick="sumCard(11)">
+        <img src="img/cards/12.png" alt="card12" onclick="sumCard(12)">
+        <img src="img/cards/13.png" alt="card13" onclick="sumCard(13)">
+    </div>
+
+    <div class="right__side">
+        <div class="container__table">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Carta</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="table__tbody">
+                    <tr>
+                        <th>1</th>
+                        <td>As de diamante</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Dos de diamante</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Tres de corazones</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>Cuatro de corazones</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form__container">
+            <div class="form">
+                <p>Registro de Cartas</p>
+                <div class="form__number">
+                    <p>Número</p>
+                    <form action="">
+                        <input id="number_input" class="form__input" type="number">
+                    </form>
+                </div>
+                <div class="form__card">
+                    <p>Carta</p>
+                    <form action="">
+                        <input id="card_input" class="form__input" type="text">
+                    </form>
+                </div>
+                <button id="button_save" class="button__ingresar">Guardar</button>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>

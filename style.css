@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;;
+}
+
+#logo{
+    height: 200px;
+    width: 200px;
+    margin-left: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0vh;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    height: 400px;
+    box-shadow: 2px 0px 10px 0px;
+    background-color: aliceblue;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container__header{
+    display: flex;
+    justify-content: star;
+    width: 100%;
+    background-color: brown;
+    color: white;
+}
+
+.container__header p{
+    padding: 10px;
+}
+
+.container__data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1rem;
+    margin-top: 13vh;
+}
+
+.container__user{
+    display: flex;
+    gap: 2.7rem;
+}
+
+.container__password{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.container__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.button__ingresar{
+    border: none;
+    background-color: brown;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*HOMEPAGE*/
+.right__side{
+    margin-top: -500px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    /*margin-top: -200px;*/
+}
+
+.cards img{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.container__table{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(72, 72, 72);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin: 0 20px 0 0;
+    width: 50%;
+  }
+  
+  thead {
+    background-color: rgb(255, 196, 196);;
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(60, 60, 60);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody > tr:nth-of-type(even) {
+    background-color: rgb(255, 196, 196);
+  }
+
+.form__container{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: star;
+    justify-content: center;
+    margin: 20px 20px 0 20px;
+    padding: 20px;
+    border: 2px solid black;
+    width: 50%;
+    gap: 1rem;
+}
+
+.form__input{
+    width: 50%;
+    height: 100%;
+}
+
+@media (width < 946px){
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 300px;
+    }
+
+
+    .right__side{
+        margin-top: -650px;
+    }
+}
+
+@media (width < 728px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 200px;
+    }
+
+    .right__side{
+        margin-top: -950px;
+    }
+}
+
+@media (width < 511px){
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .cards{
+        margin: 0 auto;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .right__side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+        width: 100%;
+    }
+
+    .container__table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
