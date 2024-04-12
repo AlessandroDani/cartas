@@ -3,21 +3,6 @@ const number = document.getElementById('number_input');
 const card = document.getElementById('card_input');
 const table = document.getElementById('table');
 
-/* Login */
-const buttonLogin  = document.getElementById('submit__button');
-const user = document.getElementById('input__user');
-const password = document.getElementById('input__password');
-
-buttonLogin.addEventListener('click', ()=>{
-    if(user.value == 'admin' && password.value == 1234){
-        localStorage.setItem('usuario', user.value);
-        alert('Bienvenido a su pagina web de cartas');
-        window.location.href = "homepage.html";
-    }else{
-        alert("Sus credenciales son incorrectas, vuelve a intentarlo");
-    }
-})
-
 let array = [{
     "numero": "1",
     "carta": "As",
@@ -58,6 +43,7 @@ button.addEventListener('click', ()=>{
     updateTable();
 })
 
+
 function updateTable(){
     let tbody = table.getElementsByTagName('tbody')[0];
     let row = tbody.insertRow();
@@ -80,19 +66,12 @@ function sumCard(num){
     let tr = tbody.getElementsByTagName('tr');
 
     for(let i=0; i < tr.length; i++){
-        try{
         if(tr[i].getElementsByTagName('th')[0].innerText == num){
             let suma = tr[i].getElementsByTagName('td')[1].innerText;
             tr[i].getElementsByTagName('td')[1].innerText = ++suma;
             console.log(suma);
         }
-    }catch(e){
-        alert("Carta no registrada");
-    }
     }
 }
 
-function checkUser(){
-
-}
 
